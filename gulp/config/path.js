@@ -9,6 +9,7 @@ export const path = {
     build: {
         js: buildFolder + '/js/',
         img: buildFolder + '/img/',
+        svg: buildFolder + '/img/icons/',
         css: buildFolder + '/css/',
         html: buildFolder + '/',
         fonts: buildFolder + '/fonts/',
@@ -17,6 +18,7 @@ export const path = {
     src: {
         js: [srcFolder + '/js/*.js', !srcFolder + '/js/_*.js'],
         img: srcFolder + '/img/**/*.{jpg,png,svg,gif,ico,webp,mp4,webm,webmanifest}',
+        svg: srcFolder + '/img/icons/*.svg',
         scss: [srcFolder + '/scss/*.scss', !srcFolder + '/scss/_*.scss'],
         html: [srcFolder + '/*.html', !srcFolder + '/_*.html'],
         fonts: srcFolder + '/fonts/**/*.*',
@@ -25,6 +27,7 @@ export const path = {
     watch: {
         js: srcFolder+ '/**/*.js',
         img: srcFolder+ '/img/**/*.{jpg,png,svg,gif,ico,webp,mp4,webm,webmanifest}',
+        svg: srcFolder+ '/img/icons/*.svg',
         scss: srcFolder+ '/**/*.scss',
         html: srcFolder+ '/**/*.html',
         files: srcFolder+ '/files/**/*.*',
